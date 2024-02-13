@@ -23,6 +23,15 @@ public class Project_Dastan_Ibraimov {
 
         Policy firstObject = new Policy(policyNumber, providerName, firstName, lastName, age, smokingStatus, height, weight);
         System.out.println("Policy Number: " + firstObject.getPolicyNumber());
-        System.out.println("Provider Name: ");
+        System.out.println("Provider Name: " + firstObject.getProviderName());
+        System.out.println("Policyholder’s First Name: " + firstObject.getPolicyholderFirstName());
+        System.out.println("Policyholder’s Last Name: " + firstObject.getPolicyHolderLastName());
+        System.out.println("Policyholder’s Age: " + firstObject.getPolicyHolderAge());
+        System.out.println("Policyholder’s Smoking Status: " + firstObject.getSmokingStatus());
+        System.out.printf("Policyholder’s Height: %.2f\n inches", firstObject.getPolicyHolderHeight());
+        System.out.printf("Policyholder’s Weight: %.2f\n pounds", firstObject.getPolicyHolderWeight());
+        System.out.printf("Policyholder’s BMI: %.2f\n", firstObject.policyHolderBMI());
+        System.out.printf("Policy Price: $%.2f\n", firstObject.insurancePolicyFee());
+
     }
 }
